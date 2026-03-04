@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
     <title>My Portfolio</title>
+
+    <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <div class="logo">Mohamed Be</div>
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#work">Work</a></li>
@@ -20,56 +27,59 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home">
+    <section id="home" class="section hero">
         <h1>Welcome to My Portfolio</h1>
         <p>I'm a passionate web developer.</p>
+        <a href="#work" class="btn">View My Work</a>
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="section">
         <h2>About Me</h2>
         <p>I am a web developer with experience in creating dynamic websites and web applications.</p>
     </section>
 
     <!-- Work Section -->
-    <section id="work">
+    <section id="work" class="section">
         <h2>My Work</h2>
-        <ul>
-            <li>Project 1 - <a href="#">View</a></li>
-            <li>Project 2 - <a href="#">View</a></li>
-            <li>Project 3 - <a href="#">View</a></li>
-        </ul>
+        <div class="projects">
+            <div class="card">
+                <h3>Project 1</h3>
+                <a href="#">View</a>
+            </div>
+            <div class="card">
+                <h3>Project 2</h3>
+                <a href="#">View</a>
+            </div>
+            <div class="card">
+                <h3>Project 3</h3>
+                <a href="#">View</a>
+            </div>
+        </div>
     </section>
 
     <!-- Resume Section -->
-    <section id="resume">
+    <section id="resume" class="section">
         <h2>Resume</h2>
-        <p>Details about my education and work experience.</p>
-        <ul>
-            <li>Education: Bachelor's in Computer Science</li>
-            <li>Experience: 3+ years as a Full Stack Developer</li>
+        <ul class="resume-list">
+            <li><strong>Education:</strong> Bachelor's in Computer Science</li>
+            <li><strong>Experience:</strong> 3+ years as a Full Stack Developer</li>
         </ul>
     </section>
 
-    <!-- Contact Section with Form -->
-    <section id="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="section">
         <h2>Contact Me</h2>
-        <form action="" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <br>
-            <input type="submit" value="Submit">
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Submit</button>
         </form>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <p>&copy; 2026 Mohamed Be. All rights reserved.</p>
     </footer>
 
